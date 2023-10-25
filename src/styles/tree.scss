@@ -29,7 +29,7 @@ label.tree_label:hover { color: #666; }
 
 label.progress:before {
   background: red;
-  outline: 1px solid red;
+  border: 1px solid red;
   color: #fff;
   position: relative;
   z-index: 1;
@@ -45,7 +45,7 @@ label.progress:before {
 
 label.cancel:before {
   background: green;
-  outline: 1px solid green;
+  border: 1px solid green;
   color: #fff;
   position: relative;
   z-index: 1;
@@ -61,7 +61,7 @@ label.cancel:before {
 
 .tree_cancel::before {
   background: white;
-  outline: 1px solid green;
+  border: 1px solid green;
   color: #fff;
   position: relative;
   z-index: 1;
@@ -77,7 +77,7 @@ label.cancel:before {
 
 .tree_progress::before {
   background: white;
-  outline: 1px solid red;
+  border: 1px solid red;
   color: #fff;
   position: relative;
   z-index: 1;

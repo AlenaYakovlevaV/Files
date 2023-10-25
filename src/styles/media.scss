@@ -1,0 +1,11 @@
+@media all and (max-width: 650px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn-print {
+    display: none;
+  }
+}

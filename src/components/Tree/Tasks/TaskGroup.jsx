@@ -5,9 +5,11 @@ import { RenderList } from "../RenderList";
 
 export const TaskGroup = ({task, visible}) => {
   const [checked, setChecked] = React.useState(visible);
+
   React.useEffect(() => {
     setChecked(visible);
   }, [visible]);
+
   return <div>
   <input onClick={() => setChecked(!checked)} type="checkbox" checked={checked} id={task.id} />                  
   <label className={task.state === 'Завершено' ? 'cancel tree_label' : 'progress tree_label'} for={task.id}>
@@ -20,6 +22,6 @@ export const TaskGroup = ({task, visible}) => {
   {task.endDate && <span>Выполнить до {FunctionDate(new Date(task.endDate))}</span>}
   </div>
   </label>
-  {(checked) && <RenderList tasks={task.tasksTreeItems} visible={visible}/>}
+  {checked && <RenderList tasks={task.tasksTreeItems} visible={visible}/>}
 </div>
 }
